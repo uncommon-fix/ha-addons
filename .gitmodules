@@ -1,0 +1,3 @@
+[submodule "traefik"]
+	path = traefik
+	url = ../ha-addon-traefik.git
