@@ -1,13 +1,13 @@
 # uncommon-fix — Home Assistant Add-ons
 
-A Home Assistant add-on repository. Add this repo's URL to your Supervisor to
-install the add-ons below. Each add-on lives in its own repository and is
-included here as a submodule.
+A Home Assistant add-on repository. Add this repo's URL to your Supervisor
+to install the add-ons below. Each add-on lives in its own repository and
+is included here as a git submodule pinned to a release tag.
 
 > [!WARNING]
-> These add-ons are early **public alphas** — expect breaking changes and the
-> occasional need to reinstall. Please don't rely on them for anything critical
-> yet. File issues in the individual add-on repositories.
+> These add-ons are early **public alphas** — expect breaking changes and
+> the occasional need to reinstall. Please don't rely on them for anything
+> critical yet. File issues in the individual add-on repositories.
 
 ## Install
 
@@ -23,12 +23,13 @@ included here as a submodule.
 
 | Add-on | Description | Source |
 | --- | --- | --- |
-| **Traefik** | Traefik reverse-proxy for your LAN with a built-in UI, Cloudflare DNS-01 TLS, and per-route reachability sensors. | [`ha-addon-traefik`](https://github.com/uncommon-fix/ha-addon-traefik) |
+| **Traefik** | LAN reverse-proxy with a built-in UI for routes/middlewares, Cloudflare DNS-01 TLS, and per-route reachability sensors. | [`ha-addon-traefik`](https://github.com/uncommon-fix/ha-addon-traefik) |
+| **DaVinci Resolve Postgres** | Self-hosted PostgreSQL 15 for DaVinci Resolve Studio project databases. Per-library web UI creates a fresh DB + user + random password, ready to paste into DaVinci's *Connect to PostgreSQL* dialog. HA's full backup covers `/data/pgdata` cleanly via `backup: cold`. DaVinci Resolve 18 and 19 supported. | [`ha-addon-davinci-resolve`](https://github.com/uncommon-fix/ha-addon-davinci-resolve) |
 
 ## Architectures
 
 `aarch64` (Raspberry Pi / ARM64) and `amd64` (x86-64). Prebuilt images are
-published to GitHub Container Registry.
+published to GitHub Container Registry per addon (`ghcr.io/uncommon-fix/<image>`).
 
 ## License
 
