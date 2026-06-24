@@ -1,3 +1,6 @@
 [submodule "traefik"]
 	path = traefik
 	url = ../ha-addon-traefik.git
+[submodule "davinci-resolve"]
+	path = davinci-resolve
+	url = ../ha-addon-davinci-resolve.git
