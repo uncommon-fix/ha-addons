@@ -4,3 +4,6 @@
 [submodule "davinci-resolve"]
 	path = davinci-resolve
 	url = ../ha-addon-davinci-resolve.git
+[submodule "unifi-controller"]
+	path = unifi-controller
+	url = ../ha-addon-unifi-controller.git
